@@ -1,0 +1,94 @@
+body 
+    margin 0    
+    padding: 0
+
+    .index-wrapper 
+        max-width: 1300px
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        //grid-column-gap: 21px;
+        //grid-row-gap: 21px;
+        color white 
+
+        &-karty:nth-child(1)
+            background-color rgb(228, 163, 43)
+        
+        &-karty:nth-child(2)
+            background-color rgb(194, 145, 53)
+
+        &-karty:nth-child(3)
+            background-color rgb(196, 156, 83)
+
+        &-karty:nth-child(4)
+            background-color rgb(233, 207, 160)
+
+        &-karty
+            background: orange
+            padding 10px
+            display flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            height: 250px
+            transform: translateY(0)
+            transition transform .3s ease, background .3s ease
+
+            &:hover
+                transform translateY(-36px)
+
+                path
+                    stroke: #faebe1
+
+                a
+                    background #e8ad48
+
+            svg
+                width: 100px
+                height: 100px
+
+                path
+                    stroke: white
+
+            &-obrazek
+                display: flex                
+                justify-content: center
+                align-items: center 
+
+            &-barva1
+                background-color: green 
+
+            &-tlacitko
+                display: flex                
+                justify-content: center
+                align-items: center
+                margin-top: 10px 
+
+
+                a
+                    width: 100px
+                    height: inset //defaultni hodnota
+                    padding 8px
+                    background-color: orange
+                    border: 1.3px solid rgb(243, 243, 243) 
+                    font-size: 17px
+                    font-weight: bold
+                    color white
+                    text-decoration: none
+                    text-align: center
+                    transition: ease .3s
+
+                    
+
+            &-nadpis
+                display: flex                
+                justify-content: center
+                align-items: center                       
+
+                 
+
+                    
+                    
+
+
+            

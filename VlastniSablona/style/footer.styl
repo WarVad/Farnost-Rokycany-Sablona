@@ -1,0 +1,125 @@
+body
+    margin 0
+    padding 0
+
+
+
+.footer
+    background-color: #272727
+    color white
+    padding: 25px
+  
+    &-wrapper 
+        max-width: 1300px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin auto
+        
+        &-odkazy
+            display flex
+            justify-content center
+            align-items: center
+            gap 20px
+            width: 91%
+            border-bottom: 1px solid white 
+            padding 0 0 15px 0 
+
+            a 
+                height: 50px
+
+                svg
+                    fill: white
+                    width: 50px
+                    height: 50px
+                    transition: ease .5s
+
+                    &:hover
+                        fill rgb(231, 142, 8)
+
+        &-inf
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 100%  
+            background-color: #272727
+            padding: 25px
+            box-shadow: 0px 2px 5px rgba(0,29,101,0.11)
+            align-content: center
+
+            @media only screen and (min-width: 890px)
+                display: flex
+                justify-content space-between
+                flex-direction: row
+
+            &-obrazek
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center
+                 
+                img
+                    width: 225px;    
+
+            &-kontakt
+                display flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+
+                h2
+                    width: 150px
+                    text-align: center
+                    margin 0
+                    padding: 6px 0
+                    border-bottom: 2px solid white
+
+                &-container
+                    display flex
+                    flex-direction column
+                    gap 30px
+                    justify-content center
+                    align-items center
+                    width: 100%
+                    margin: 0 0 20px 0
+
+                    @media only screen and (min-width: 890px)
+                        flex-direction row
+                        justify-content center
+                        gap 100px
+                        
+                    
+                    &-popisek
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        gap 10px
+                        width: 325px
+
+                        @media only screen and (max-width: 1050px)
+                            width: auto
+
+                        @media only screen and (max-width: 890px)
+                            width: 325px                          
+
+                        h3
+                            width: 100%
+                            padding 0 0 0 5px
+
+                        svg
+                            width: 30px
+
+                        ul
+                            display: flex
+                            flex-direction: column
+                            gap 10px
+                            margin: 0
+                            padding: 0
+                            width: 100%
+
+                            li
+                                display flex
+                                justify-content: flex-start
+                                align-items: center
+                                gap 10px

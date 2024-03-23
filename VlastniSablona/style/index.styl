@@ -1,0 +1,74 @@
+body 
+    margin 0    
+    padding: 0
+
+
+.index
+    background-color: #cf1414
+    color white
+    padding: 25px
+  
+    &-wrapper 
+        background-color: #b1911d
+        max-width: 1300px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+
+
+        &-karty
+            background-color: orange
+            width: 100%
+            height: 100%
+            margin 1px
+            padding: 30px
+
+            svg
+                color: rgb(255, 255, 255)
+                width: 100px
+                height: 100px
+            
+            &-obrazek
+                display: flex                
+                justify-content: center
+                align-items: center 
+
+            &-barva1
+                background-color: green 
+
+            &-tlacitko
+                display: flex                
+                justify-content: center
+                align-items: center
+                margin-top: 10px 
+
+
+                input
+                    width: 40%
+                    height: 100%
+                    padding 8px
+                    background-color: orange
+                    border: 1.3px solid rgb(243, 243, 243) 
+                    font-size: 17px
+                    font-weight: bold
+                    color white
+
+                    &:hover
+                        fill rgb(231, 142, 8)
+
+            &-nadpis
+                display: flex                
+                justify-content: center
+                align-items: center                       
+
+
+
+    @media only screen and (min-width: 768px)
+        height: 500px !important
+                 
+
+
+
+
+            

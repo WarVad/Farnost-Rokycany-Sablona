@@ -1,0 +1,110 @@
+.obsah {
+  color: #fff;
+  margin-top: 80px;
+  background-color: #fef9f5;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 890px) {
+  .obsah {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.obsah-nadpis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000;
+}
+.obsah-aktuality {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 21px;
+  grid-row-gap: 21px;
+  padding: 21px;
+}
+.Artical-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.Artical-card:hover {
+  transform: scale(1.1);
+}
+.Artical-card-header {
+  height: 154px;
+  width: 100%;
+}
+.Artical-card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.Artical-card-date {
+  border-bottom: 1px solid #808080;
+  width: 65%;
+  text-align: center;
+  padding: 10px;
+}
+.Artical-card-content {
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.Artical-card-content p {
+  margin: 0;
+  text-align: center;
+}
+.hero {
+  width: 100%;
+  height: 300px !important;
+  border-radius: 10px;
+  margin: 50px 0 0 0;
+}
+@media only screen and (min-width: 568px) {
+  .hero {
+    height: 300px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 500px !important;
+  }
+}
+.hero ul {
+  height: 300px !important;
+}
+@media only screen and (min-width: 768px) {
+  .hero ul {
+    height: 500px !important;
+  }
+}
+.hero ul li {
+  height: 100% !important;
+}
+.hero ul li img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.hero .flex-direction-nav {
+  height: 10px !important;
+}
+.flex-wiewport {
+  height: 300px !important;
+}

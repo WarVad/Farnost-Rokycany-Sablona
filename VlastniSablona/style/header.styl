@@ -1,0 +1,139 @@
+body
+    margin 0
+    padding 0
+    font-family 'Poppins', sans-serif
+    
+
+// Voláme class header
+.header
+    background: rgb(255, 255, 255)
+    height: 100px
+    color: white
+    box-shadow: 0px 2px 5px rgba(0, 29, 101, 0.11) // box shadow, dole nám to udělá krásný stín a ohraničí nám to 
+    display: flex //Vytvoříme container pomoocí flex
+    justify-content: center //Na ose x zarovnáme v containeru itemy na prostředek, nefunguje, pokud neni nastaveno display flex
+    z-index: 10
+    position: relative
+    box-shadow: 0px 2px 5px rgba(0, 29, 101, 0.11) !important
+
+    &-wrapper
+        max-width: 1300px
+        display: flex
+        justify-content: space-between 
+        width: 100%
+        position: relative
+        z-index: 10
+        background-color: white
+        padding: 10px
+        
+
+        @media only screen and (min-width: 768px)
+            box-shadow: none
+            
+
+        &-logo
+            width: 80px
+            display: flex
+            justify-content: center
+            align-items: center
+
+            img
+                width: 100%
+
+.nav
+    width: 100%
+    position: absolute
+    background-color: white
+    transform: translateY(-100%)
+    transition: ease transform .6s
+    box-shadow: 0px 2px 5px rgba(0, 29, 101, 0.11)
+    padding 30px
+    //height: 100%
+    
+
+    @media only screen and (min-width: 986px)
+        top: 5px
+        z-index: 10
+        box-shadow: none
+        background-color: rgba(255, 255, 255, 0)
+        height: 90px
+        justify-content: flex-end
+        margin: auto
+        max-width: 1300px
+        padding-right: 80px
+        transform: translateY(0)
+
+    &.is-active
+        transform: translateY(30%)
+
+    ul
+        display: flex 
+        position relative
+        flex-direction: column
+        justify-content: center 
+        align-items: center 
+        height: 100% 
+        margin: 0
+        padding: 0
+        gap: 24px
+            
+        @media only screen and (min-width: 986px)
+            justify-content: flex-end
+            flex-direction: row
+            width: 100%
+            
+        li
+            display: flex
+            height: 20px
+
+            &.current-menu-item // Třída pro položku menu, která zůstane oranžově zbarvená po kliknutí
+                background: orange // Nastaví pozadí na oranžovou
+
+                a
+                    color: white // Nastaví barvu textu na bílou pro lepší čitelnost
+
+            a
+                color: black
+                font-size: 20px
+                font-weight: bold
+                text-decoration: none              
+
+                &:hover
+                    color: #C29135
+
+
+
+.hamburger
+    position: absolute
+    top 30px
+    right 25px
+    cursor pointer
+
+    @media only screen and (min-width: 986px)
+        display: none
+
+    .stick
+        width: 35px
+        border 2px solid black
+        border-radius: 10px
+        margin: 8px
+        display flex
+        flex-direction: column
+        transition ease transform .6s, ease opacity 1s
+
+    &.is-active
+        .stick
+            &:nth-child(1)
+                transform: rotate(45deg) translate(7px,6px)
+
+            &:nth-child(2)
+                opacity 0
+                transform: translateX(-30px)
+
+            &:nth-child(3)
+                transform rotate(-45deg) translate(8px,-8px)
+
+.main
+    max-width: 1300px
+    margin: auto
+    padding: 5px
