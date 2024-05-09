@@ -17,7 +17,7 @@
 				</div>
 				<div class="footer-wrapper-inf">
 						<div class="footer-wrapper-inf-obrazek">
-							<img src="//farnost-rokycany.cz/wp-content/themes/VlastniSablona/obrazky/kostel.png" alt="" id="logo2">					                  
+							<img src="//farnost-rokycany.cz/wp-content/themes/VlastniSablona/obrazky/Kostel_paticka.svg" alt="" id="logo2">					                  
 						</div>
 						<div class="footer-wrapper-inf-kontakt">
 							<h2>Kontakty</h2>
