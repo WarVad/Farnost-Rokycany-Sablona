@@ -1,11 +1,13 @@
-    .obsah
-        color white
-        margin-top: 80px                         
-        background-color: #FEF9F5
-        max-width: 1300px
-        display: flex                
-        flex-direction: column
-        justify-content: flex-start
+    .obsah 
+        color: white // Určuje, že barva písma bude bílá.
+        margin-top: 80px // Nastavuje horní okraj (margin) na 80px.
+        background-color: #FEF9F5 // Nastavuje barvu pozadí na světle béžovou.
+        max-width: 1300px // Omezuje maximální šířku elementu na 1300px.
+        display: flex // Nastavuje flexbox model pro layout elementu.
+        flex-direction: column // Určuje, že flex položky budou uspořádaný ve sloupci.
+        justify-content: flex-start // Zarovnává položky na začátek kontejneru podél hlavní osy.
+    
+
 
         @media only screen and (max-width: 890px)
             display: flex                
@@ -20,12 +22,12 @@
             color black  
 
         &-aktuality
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-column-gap: 21px;
-            grid-row-gap: 21px;
-            padding 21px
+            display: grid; // Zapíná CSS grid layout pro element.
+            justify-content: center; // Centruje grid položky vodorovně v grid kontejneru.
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Definuje automatické uspořádání sloupců, které mají minimální šířku 250px a rozložení zbývajícího prostoru.X
+            grid-column-gap: 21px; // Nastavuje horizontální mezery mezi sloupci na 21px.
+            grid-row-gap: 21px; // Nastavuje vertikální mezery mezi řádky na 21px.
+            padding: 21px; // Přidává vnitřní odsazení 21px ze všech stran elementu.
 
 .Artical-card
     display flex

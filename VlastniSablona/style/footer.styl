@@ -29,14 +29,17 @@ body
             a 
                 height: 50px
 
-                svg
-                    fill: white
-                    width: 50px
-                    height: 50px
-                    transition: ease .5s
+                svg 
+                    fill: white; // Nastavuje výplňovou barvu SVG na bílou.
+                    width: 50px; // Nastavuje šířku SVG na 50 pixelů.
+                    height: 50px; // Nastavuje výšku SVG na 50 pixelů.
+                    transition: ease .5s; // Nastavuje plynulý přechod pro efekt s lehkým zpomalením na začátku a konci.
+                
 
-                    &:hover
-                        fill rgb(231, 142, 8)
+                    &:hover 
+                        fill: rgb(231, 142, 8); // Mění výplňovou barvu SVG na oranžovou při najetí myší.
+                
+
 
         &-inf
             display: flex
@@ -96,7 +99,8 @@ body
                         align-items: center
                         gap 10px
                         width: 325px
-
+                        color: white !important
+                        text-decoration: none !important
                         @media only screen and (max-width: 1050px)
                             width: auto
 
@@ -123,3 +127,9 @@ body
                                 justify-content: flex-start
                                 align-items: center
                                 gap 10px
+                                color: white !important
+                                text-decoration: none !important
+
+                                a
+                                    color: white !important
+                                    text-decoration: none !important                                    

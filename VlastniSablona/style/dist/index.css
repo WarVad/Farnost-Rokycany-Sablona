@@ -12,6 +12,7 @@ body {
   max-width: 1300px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -23,7 +24,7 @@ body {
   padding: 30px;
 }
 .index-wrapper-karty svg {
-  color: #FEF9F5;
+  color: #fff;
   width: 100px;
   height: 100px;
 }

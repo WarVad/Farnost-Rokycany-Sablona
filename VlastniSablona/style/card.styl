@@ -1,94 +1,134 @@
-body 
-    margin 0    
-    padding: 0
+body
+  margin 0
+  padding 0
 
-    .index-wrapper 
-        max-width: 1300px
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        //grid-column-gap: 21px;
-        //grid-row-gap: 21px;
-        color white 
+  .index-wrapper
+    max-width 1300px
+    display grid
+    justify-content center
+    grid-template-columns 1fr 1fr 1fr 1fr
+    color #fff
 
-        &-karty:nth-child(1)
-            background-color rgb(228, 163, 43)
-        
-        &-karty:nth-child(2)
-            background-color rgb(194, 145, 53)
+  .index-wrapper-karty
+    background #ffa500
+    padding 10px
+    display flex
+    justify-content center
+    align-items center
+    flex-direction column
+    flex 1
+    height 250px
+    transform translateY(0)
+    transition transform 0.3s ease, background 0.3s ease
+    position relative
+    &:nth-child(1)
+      background-color #C3972B
+      &:hover
+        path
+          fill: #faebe1
+    &:nth-child(2)
+      background-color #CCA64A
+    &:nth-child(3)
+      background-color #D0B571
+    &:nth-child(4)
+      background-color #EAD091
+    &:hover
+      transform translateY(-36px) // Posune element 0 36 pixelů směrem nahoru po najetí myši
 
-        &-karty:nth-child(3)
-            background-color rgb(196, 156, 83)
+      path
+        stroke #faebe1
 
-        &-karty:nth-child(4)
-            background-color rgb(233, 207, 160)
+      .index-wrapper-karty-tlacitko
+        a
+          background #e8ad48
 
-        &-karty
-            background: orange
-            padding 10px
-            display flex
-            justify-content: center
-            align-items: center
-            flex-direction: column
-            height: 250px
-            transform: translateY(0)
-            transition transform .3s ease, background .3s ease
+    svg
+      width 100px
+      height 100px
+      path
+        stroke #fff
 
-            &:hover
-                transform translateY(-36px)
+  .index-wrapper-karty-obrazek
+    display flex
+    justify-content center
+    align-items center
 
-                path
-                    stroke: #faebe1
+  .index-wrapper-karty-barva1
+    background-color #008000
 
-                a
-                    background #e8ad48
+  .index-wrapper-karty-tlacitko
+    display flex
+    justify-content center
+    align-items center
+    margin-top 10px
 
-            svg
-                width: 100px
-                height: 100px
+    a
+      width 100px
+      height inset //defaultní hodnota
+      padding 8px
+      background-color transparent
+      border 1.3px solid #f3f3f3
+      font-size 17px
+      font-weight bold
+      color #fff
+      text-decoration none
+      text-align center
+      transition ease 0.3s
 
-                path
-                    stroke: white
+  .index-wrapper-karty-nadpis
+    display flex
+    justify-content center
+    align-items center
+    font-size 1rem
 
-            &-obrazek
-                display: flex                
-                justify-content: center
-                align-items: center 
+  .index-wrapper-karty-odkaz
+    display block
+    position absolute
+    background transparent
+    top 0
+    left 0
+    width 100%
+    height 100%
 
-            &-barva1
-                background-color: green 
+@media only screen and (max-width: 768px)
+  body
+    .index-wrapper
+      grid-template-columns 1fr 1fr
+      grid-auto-rows 150px 150px
+      grid-row-gap 20px
 
-            &-tlacitko
-                display: flex                
-                justify-content: center
-                align-items: center
-                margin-top: 10px 
+@media only screen and (max-width: 768px)
+  body
+    .index-wrapper-karty
+      height auto
+      display: inline-grid
+      grid-template-columns: 125px 1fr
+      padding-left: 17%;
+      padding-right: 20%;
+      &-nadpis
+        justify-content: start;
+        font-size: 1.1rem;
+      &:hover
+        transform translateY(-18px)
 
+@media only screen and (max-width: 480px)
+  body
+    .index-wrapper-karty
+      grid-template-columns: 75px 1fr
+      padding-left: 9%;
+      padding-right: 17%;
+      svg
+        width 50px
+        height 50px
+      @media only screen and (max-width: 480px)
+        padding-left: 10px;     
 
-                a
-                    width: 100px
-                    height: inset //defaultni hodnota
-                    padding 8px
-                    background-color: orange
-                    border: 1.3px solid rgb(243, 243, 243) 
-                    font-size: 17px
-                    font-weight: bold
-                    color white
-                    text-decoration: none
-                    text-align: center
-                    transition: ease .3s
+@media only screen and (max-width: 768px)
+  body
+    .index-wrapper-karty-tlacitko
+      display none
 
-                    
-
-            &-nadpis
-                display: flex                
-                justify-content: center
-                align-items: center                       
-
-                 
-
-                    
-                    
-
-
-            
+@media only screen and (max-width: 480px)
+  body
+    .index-wrapper-karty-nadpis
+      font-size 0.85rem

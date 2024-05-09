@@ -4,6 +4,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 .header {
+  position: fixed;
+  width: 100%;
   background: #fff;
   height: 100px;
   color: #fff;
@@ -11,7 +13,6 @@ body {
   display: flex;
   justify-content: center;
   z-index: 10;
-  position: relative;
   box-shadow: 0px 2px 5px rgba(0,29,101,0.11) !important;
 }
 .header-wrapper {
@@ -30,13 +31,33 @@ body {
   }
 }
 .header-wrapper-logo {
-  width: 80px;
+  width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header-wrapper-logo img {
   width: 100%;
+}
+@media only screen and (max-width: 1268px) {
+  .header-wrapper-logo {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header-wrapper-logo {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .header-wrapper-logo {
+    width: 360px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-wrapper-logo {
+    width: 280px;
+  }
 }
 .nav {
   width: 100%;
@@ -47,7 +68,7 @@ body {
   box-shadow: 0px 2px 5px rgba(0,29,101,0.11);
   padding: 30px;
 }
-@media only screen and (min-width: 986px) {
+@media only screen and (min-width: 1150px) {
   .nav {
     top: 5px;
     z-index: 10;
@@ -75,7 +96,7 @@ body {
   padding: 0;
   gap: 24px;
 }
-@media only screen and (min-width: 986px) {
+@media only screen and (min-width: 1150px) {
   .nav ul {
     justify-content: flex-end;
     flex-direction: row;
@@ -98,6 +119,7 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+.nav ul li a.active,
 .nav ul li a:hover {
   color: #c29135;
 }
@@ -107,7 +129,7 @@ body {
   right: 25px;
   cursor: pointer;
 }
-@media only screen and (min-width: 986px) {
+@media only screen and (min-width: 1150px) {
   .hamburger {
     display: none;
   }
@@ -135,4 +157,5 @@ body {
   max-width: 1300px;
   margin: auto;
   padding: 5px;
+  padding-top: 100px;
 }

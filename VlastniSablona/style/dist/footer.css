@@ -97,6 +97,8 @@ body {
   align-items: center;
   gap: 10px;
   width: 325px;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 @media only screen and (max-width: 1050px) {
   .footer-wrapper-inf-kontakt-container-popisek {
@@ -128,4 +130,10 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.footer-wrapper-inf-kontakt-container-popisek ul li a {
+  color: #fff !important;
+  text-decoration: none !important;
 }

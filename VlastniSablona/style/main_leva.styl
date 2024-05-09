@@ -1,9 +1,9 @@
   .Card
-        position relative
-        min-height 200px
-        display flex
-        cursor pointer
-        text-decoration none
+        position: relative; // Element se může stát kontejnerem pro absolutně pozicované potomky.
+        min-height: 200px; // Zajišťuje, že element nebude menší než 200 pixelů na výšku.
+        display: flex; // Umožňuje flexibilní uspořádání potomků v rámci elementu.
+        cursor: pointer; // Mění tvar kurzoru na symbol ukazovátka, indikující interaktivitu.
+        text-decoration none // Odstraňuje dekoraci textu, například podtržení.
 
         &:after
             position absolute

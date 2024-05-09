@@ -158,16 +158,19 @@
         td:last-of-type, th:last-of-type
             border-right none
 
-.karty_kalendar_spol
-    width 100%
-    display flex
-    justify-content center
-    gap 20px
+.karty_kalendar_spol 
+    width: 100%; // Nastavuje šířku elementu na 100% rodičovského elementu.
+    display: flex; // Nastavuje flexbox model pro layout elementu.
+    justify-content: center; // Centruje potomky uvnitř flex kontejneru podél hlavní osy.
+    gap: 20px; // Vytváří mezery (odstup) mezi potomky o velikosti 20px.
 
-    @media only screen and (max-width: 768px)
-        flex-direction column
-        justify-content center
-        align-items center
+
+    @media only screen and (max-width: 768px)  // Pravidlo pro media query, které se aplikuje na zařízení s maximální šířkou 768px.   
+        flex-direction: column; // V tomto mediálním dotazu se potomci uspořádají ve sloupci.
+        align-items: center; // Vycentrovává potomky uvnitř flex kontejneru také podle příčné osy.
+    
+
+
 
     &-jednotliva
         max-width 400px
@@ -182,7 +185,8 @@
     text-align: justify;
     align-items: center;
     margin: 15px;
-    padding: 10px;
+    padding: 15px;
+    padding-top: 40px
     border-bottom: 2px solid #403a3a;
     font-size: 28px;
     font-weight: 900;
@@ -277,7 +281,8 @@
         height 44px
 
 .center
-    text-align center
+    text-align center 
+    margin-top: 30px !important 
 
 .center1
     text-align center
@@ -322,5 +327,24 @@
     font-size: 18px;
     line-height: 26px;
     @media only screen and (max-width: 768px)
-        padding: 5%  
+        padding: 5% 
 
+
+.obsah_seznamu
+    padding: 0% 18% 2% 18%;
+    margin: 0;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 26px;
+    ul
+        margin-top: 50px
+    li
+        line-height: 26px;
+        margin-bottom: 30px !important /* Přidá místo mezi položkami seznamu */
+        margin-left: 5px
+    @media only screen and (max-width: 768px)
+        padding: 5%           
+
+.zvyraznit
+    color: #c3972b
+    font-weight: 900;

@@ -16,7 +16,8 @@ body
     position: relative
     box-shadow: 0px 2px 5px rgba(0, 29, 101, 0.11) !important
 
-    &-wrapper
+
+    &-wrapper                           //Obal pro menu
         max-width: 1300px
         display: flex
         justify-content: space-between 
@@ -31,14 +32,26 @@ body
             box-shadow: none
             
 
-        &-logo
-            width: 80px
+        &-logo  //logo
+            width: 360px
             display: flex
             justify-content: center
             align-items: center
 
             img
-                width: 100%
+                width: 100%     
+
+            @media only screen and (max-width: 1268px)
+                width: 300px 
+                
+            @media only screen and (max-width: 1200px)
+                width: 250px  
+
+            @media only screen and (max-width: 1150px)
+                width: 360px 
+
+            @media only screen and (max-width: 768px)
+                width: 280px          
 
 .nav
     width: 100%
@@ -51,7 +64,7 @@ body
     //height: 100%
     
 
-    @media only screen and (min-width: 986px)
+    @media only screen and (min-width: 1150px)
         top: 5px
         z-index: 10
         box-shadow: none
@@ -77,7 +90,7 @@ body
         padding: 0
         gap: 24px
             
-        @media only screen and (min-width: 986px)
+        @media only screen and (min-width: 1150px)
             justify-content: flex-end
             flex-direction: row
             width: 100%
@@ -103,13 +116,13 @@ body
 
 
 
-.hamburger
+.hamburger              // Rollovací menu "hamburger pro mobilní verzi"
     position: absolute
     top 30px
     right 25px
     cursor pointer
 
-    @media only screen and (min-width: 986px)
+    @media only screen and (min-width: 1150px)
         display: none
 
     .stick

@@ -186,7 +186,6 @@
 @media only screen and (max-width: 768px) {
   .karty_kalendar_spol {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 }
@@ -205,7 +204,8 @@
   text-align: justify;
   align-items: center;
   margin: 15px;
-  padding: 10px;
+  padding: 15px;
+  padding-top: 40px;
   border-bottom: 2px solid #403a3a;
   font-size: 28px;
   font-weight: 900;
@@ -305,6 +305,7 @@
 }
 .center {
   text-align: center;
+  margin-top: 30px !important;
 }
 .center1 {
   text-align: center;
@@ -351,4 +352,28 @@
   .obsah_aktualit2 {
     padding: 5%;
   }
+}
+.obsah_seznamu {
+  padding: 0% 18% 2% 18%;
+  margin: 0;
+  font-weight: 550;
+  font-size: 18px;
+  line-height: 26px;
+}
+.obsah_seznamu ul {
+  margin-top: 50px;
+}
+.obsah_seznamu li {
+  line-height: 26px;
+  margin-bottom: 30px !important /* Přidá místo mezi položkami seznamu */;
+  margin-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .obsah_seznamu {
+    padding: 5%;
+  }
+}
+.zvyraznit {
+  color: #c3972b;
+  font-weight: 900;
 }
